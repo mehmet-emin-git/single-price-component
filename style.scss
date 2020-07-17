@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// variables
+$cyan: hsl(179, 62%, 43%);
+$bright-yello: hsl(71, 73%, 54%);
+
+$light-grey: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$green: hsl(179, 47%, 52%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background: $light-grey;
+}
+
+section {
+  padding: 2.1rem;
+}
+
+// content styles
+main {
+  background: white;
+  min-width: 700px;
+  margin: auto;
+
+  h1 {
+    color: $cyan;
+    font-size: 2.5rem;
+  }
+
+  .left {
+    background-color: $cyan;
+    color: white;
+  }
+
+  .right {
+    background-color: $green;
+    color: white;
+  }
+}
