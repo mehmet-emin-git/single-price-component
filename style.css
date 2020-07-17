@@ -19,6 +19,7 @@ body {
   font-size: 16px;
   font-family: "Karla", sans-serif;
   background: #e5eff5;
+  padding: 0 1.3rem;
 }
 
 section {
@@ -27,22 +28,104 @@ section {
 
 main {
   background: white;
-  min-width: 700px;
+  max-width: 700px;
+  width: 700px;
   margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-main h1 {
+main .top h1 {
   color: #2ab2af;
   font-size: 2.5rem;
 }
 
-main .left {
+main .top p {
+  color: #acacac;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+main .top .text-yellow {
+  color: #c0df34;
+}
+
+main .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .flex > section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .flex .left {
   background-color: #2ab2af;
   color: white;
 }
 
-main .right {
+main .flex .left .faded {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(194, 246, 255, 0.753);
+}
+
+main .flex .left .faded .big {
+  color: white;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .flex .left button {
+  background: #c0df34;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .flex .right {
   background-color: #4bbebc;
   color: white;
+}
+
+main .flex .right ul {
+  list-style-type: none;
+  padding: 0;
+  opacity: 0.7;
+  font-size: 1.19rem;
+}
+
+main .flex .right ul li {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
